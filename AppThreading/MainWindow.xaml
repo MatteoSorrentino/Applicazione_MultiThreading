@@ -6,9 +6,15 @@
         xmlns:local="clr-namespace:AppThreading"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid Background="#FF1BAE93">
-        
-        <Button x:Name="Btn_Task" Content="Click" HorizontalAlignment="Left" Margin="310,225,0,0" VerticalAlignment="Top" Width="190" Height="57" FontSize="24" FontWeight="Bold" Click="Btn_Task_Click">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF3DF17E" Offset="0"/>
+                <GradientStop Color="#FF051D0D" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <Button x:Name="Btn_Task" Content="Click" HorizontalAlignment="Left" Margin="110,223,0,0" VerticalAlignment="Top" Width="190" Height="57" FontSize="24" FontWeight="Bold" Click="Btn_Task_Click">
             <Button.Background>
                 <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
                     <GradientStop Color="#FFF3F3F3" Offset="0"/>
@@ -18,7 +24,19 @@
                 </LinearGradientBrush>
             </Button.Background>
         </Button>
-        <Label x:Name="lbl_Risultato" HorizontalAlignment="Left" Margin="310,139,0,0" VerticalAlignment="Top" Width="190" Height="46"/>
+        <Label x:Name="lbl_Risultato" HorizontalAlignment="Left" Margin="110,135,0,0" VerticalAlignment="Top" Width="190" Height="46" FontSize="20"/>
+
+        <Label x:Name="lbl_Conteggio" HorizontalAlignment="Left" Margin="495,135,0,0" VerticalAlignment="Top" Height="51" Width="190" FontSize="20"/>
+        <Button x:Name="Btn_Count" Content="Conta" HorizontalAlignment="Left" Margin="495,223,0,0" VerticalAlignment="Top" Width="190" Height="54" FontSize="24" FontWeight="Bold" Click="Btn_Count_Click">
+            <Button.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF3F3F3" Offset="0"/>
+                    <GradientStop Color="#FFEBEBEB" Offset="0.5"/>
+                    <GradientStop Color="#FFDDDDDD" Offset="0.5"/>
+                    <GradientStop Color="White" Offset="1"/>
+                </LinearGradientBrush>
+            </Button.Background>
+        </Button>
 
     </Grid>
 </Window>
